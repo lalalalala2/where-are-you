@@ -1,0 +1,60 @@
+<view class="container">
+  <view class="selection">
+  <!-- 分别定义，是否显示点，自动播放，显示时间，切换时间 -->
+    <swiper indicator-dots="true" autoplay="ture" interval="3000" duration="1000">
+      <block wx:for="{{imgUrls}}"> <!--imgUrls数组，下边循环显示每个item-->
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="selection">
+    <view class='header'>
+      <text>精品推荐</text>
+      <text class="text-all">全部精品</text>
+    </view>
+  </view>
+
+  <view class='content'>
+  <!-- wx:for循环使用该布局 -->
+    <view class='content-item' wx:for="{{contentitems}}">
+      <image src='../../images/image3.png' />
+      <view class='content-item-text'>
+        <text>
+        这是图片下的文字
+        </text>
+      </view>
+    </view>
+  </view>
+    <view class='line'></view>
+  <view class="selection">
+    <view class='header'>
+      <text>热门评测</text>
+      <text class="text-all">全部评测</text>
+    </view>
+
+    <view class='list-item' wx:for="{{listitem}}">
+        <view class='list-item-images'>
+          <image class="list-item-images-img" src='../../images/image4.png' />
+          <image class="avatar" src='../../images/image3.png' />
+        </view>
+
+        <view class=' list-item-text '>
+          <view class='list-item-text-title'> 
+            <text>这是标题</text>
+          </view>
+          <view class='list-item-text-content'> 
+            <text>这是内容，这是内容，这是内容，这是内容，这是内容，这是内容，这是内容，</text>
+          </view>
+          
+        </view>
+
+     </view>
+  </view>
+
+   
+
+
+</view>

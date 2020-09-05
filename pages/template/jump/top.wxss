@@ -1,0 +1,23 @@
+/* pages/template/jump/top.wxss */
+.goods-wrap{
+  display: flex;
+  margin-bottom: 20px;
+}
+.goods-img-wrap{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.goods-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.goods-info{
+  flex: 1;
+}
+.goods-title{
+  font-size: 14px;
+  color: #333333;
+}

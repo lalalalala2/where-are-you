@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="map">
+  <image style="width:350px; height: 400px; " mode="scaleToFill" src="{{imageSrc}}"></image>
+</view>
+
+
+ <view class="btn1" id="buttonContainer">
+    <button type="primary" bindtap="go2detail">
+    <image class='btnImg' src="{{imageSrc2}}"></image>
+    <view>现在有人</view>
+    </button>
+  </view>
+
+

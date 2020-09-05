@@ -1,0 +1,15 @@
+<!--pages/template/jump/top.wxml-->
+<template name="goodsList"> 
+<view wx:for="{{goodsList}}" wx:for-item="goods" wx:key="unique">
+  <view class='goods-wrap'>
+     <view class='goods-img-wrap'>
+      <image src='{{goods.imgUrl}}' class='goods-img'/>
+    </view> 
+    <view class='goods-info'>
+      <view class='goods-title'>
+          {{goods.title}}
+      </view>
+    </view>
+  </view>
+</view>
+</template>

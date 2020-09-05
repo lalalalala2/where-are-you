@@ -1,0 +1,105 @@
+/* .selection{
+  border-bottom: 2px solid gray;
+} */
+.line{
+  height: 12rpx;
+  width: 100%;
+  color: gray;
+}
+.header{
+  /* header是这个布局的整体，设置左边的绿色竖杠 */
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-left-color: rgb(10, 134, 10);
+  /* 实现效果要用flex */
+  display: flex;
+  /* 主轴（横向）该参数使布局中的模块均匀分开 */
+  justify-content: space-between;
+  /* 竖轴，居中 */
+  align-content: center;
+  height: 60rpx;
+  /* 该布局中的元素距左右分别10rpx */
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  /* 该布局距上部10rpx */
+  margin-top: 10rpx;
+
+}
+.text-all{
+  color: rgb(84, 134, 8);
+  font-size: 10px;
+}
+.content{
+  display: flex;
+  /* 横向排列，多出的自动换行；水平居中 */
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: center;
+
+  }
+.content-item{
+  /* 每个item的宽高，距周围的距离 */
+  height: 250rpx;
+  width: 45%;
+  margin: 5px;
+/* 设定父布局的位置 */
+  position: relative;
+}
+.content-item image{
+  width: 100%;
+  height: 100%;
+}
+.content-item-text{
+  width: 98%;
+  height: 125rpx;
+  /* 设定文字的绝对位置，首先要设定父布局的位置 */
+  position: absolute;
+  bottom: 0px;
+  color: #fff;
+  font-size: 10px;
+  /* 设置文字的渐变背景色 */
+  background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.8),rgba(0,0,0,0));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  padding-right:  1%;
+}
+.list-item{
+  height: 500rpx;
+  width: 100%;
+}
+.list-item-images{
+  height: 300rpx;
+  width: 100%;
+  position: relative;
+}
+.list-item-images-img{
+  height: 100%;
+  width: 100%;
+}
+.avatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50rpx;
+  right: 50rpx;
+}
+.list-item-text{
+  height: 200rpx;
+  width: 96%;
+  margin-top: 20px;
+  padding-top: 0px;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+.list-item-text-title{
+
+}
+.list-item-text-content{
+  font-size: 10px;
+  color:gray;
+   margin-top: 5px;
+}
